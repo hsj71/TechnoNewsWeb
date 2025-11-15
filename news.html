@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Layout</title>
+    <style>
+        .head1 {
+            font-size:40px;
+            color:gray;
+            font-weight:bold;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left:10px;
+            margin-bottom:15px;
+        }
+        body {
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+			
+        }
+    
+        .menu {   
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+		.c1{
+			background-color:green;
+			border: none;
+			font-size: 24px;
+			padding: 5px;
+			border-radius: 75%;
+			cursor: pointer;
+			box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+			transition: background-color 0.3s;
+		}
+		.c2{
+			background-color:red;
+			border: none;
+			font-size: 24px;
+			padding: 5px;
+			border-radius: 75%;
+			cursor: pointer;
+			box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+			transition: background-color 0.3s;
+		}
+		
+		.space{
+		height:30px;
+		}
+		footer div a{
+		 color: red;
+		}
+		
+		footer div{
+		height: 45px;
+		}
+		
+    </style>
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="input.css">
+	<script>
+	var a=0;
+	var d=0;
+	function agree(){
+	alert("You like "+a+" times")
+	}
+	function nagree(){
+	alert("You dislike  "+d+ "times")
+	}
+	function add(){
+	a++;
+	}
+	function nadd(){
+	d++;
+	}
+	</script>
+</head>
+<body>
+	<header>
+	<center>
+        <div class="head1">TECHNOLOGYforALL</div>
+        <div class="head2">A science portal for everyone</div>
+    </header>
+	<div class="menu">
+        <a href="Page HTML.html">HOME</a>
+        <a href="news.html">NEWS</a>
+        <a href="#notification">NOTIFICATIONS</a>
+        <div class="menu-log">
+            <a href="PersonalDetails.html">LOGIN</a>
+        </div>
+    </div>
+	<main>
+	<div style="space" >
+	</div>
+			<section class="task-section">
+                <div class="task-card">
+                    <span class="task-title"><h4>Bluetooth Auracast Gains Momentum:</h4> A new feature allows headphones to connect with devices without prior pairing, useful for announcements or shared audio at event</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <span class="task-title"><h4>Surgical Robots with Human-Level Skills:</h4> A robot trained using surgical videos can now perform procedures with precision comparable to human surgeons</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>AI Gadgets Revolutionize User Interaction:</h4> The Rabbit R1 device showcased at CES 2024 highlights AI's ability to simplify interactions with apps, potentially reducing screen time</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>	
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Quantum Computing Advances:</h4> Researchers highlight the need for quantum-secure cryptography as quantum computing capabilities expand​</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Smart Rings Trending:</h4> Wearables like the Samsung Galaxy Ring and Amazfit Helio Ring are shifting focus from watches to rings for health tracking and device control​</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Transparent Electronics and Quantum Devices:</h4> A breakthrough material paves the way for advanced semiconductors and energy-efficient electronics</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Mind-Reading Neural Earbuds:</h4> New earbuds integrate gyroscopic and brainwave sensors to control devices through neural commands, revolutionizing accessibility​</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Android 15 Update for OnePlus:</h4> The latest OxygenOS introduces faster performance, advanced AI tools, and seamless file sharing for OnePlus 12 and 12R​</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>Bioelectronics Innovation:</h4> A hydrogel semiconductor offers groundbreaking integration of living tissue with electronic technology</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+				
+				<div class="task-card">
+                    <span class="task-title"><h4>AR and VR in Sports:</h4> Augmented and virtual reality technology is transforming experiences in NFL games, enhancing fan engagement and player training</span>
+                    <div class="task-actions">
+                        <button class="icon-btn mark-btn" onclick="this.style.backgroundColor = 'green';add()">✔</button>
+                        <button class="icon-btn delete-btn" onclick="this.style.backgroundColor = 'red';nadd()">✘</button>
+                    </div>
+                </div>
+            </section>
+	</main>
+	
+    </center>
+    <footer style="position:relative">
+		<center style="margin-top:70px;">
+			<div>Check Agreed with: 
+			<button class="c1" onclick=agree()>✔</button></div>
+			<div>Check not Agreed with: 
+			<button class="c2" onclick=nagree()>✘</button></div>
+			<div>Contact me at <a href="mailto:#">#</a></div>
+	    </center>
+    </footer>
+</body>
+</html>

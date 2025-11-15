@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Layout</title>
+    <style>
+        .head1 {
+            font-size:40px;
+            color:gray;
+            font-weight:bold;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left:10px;
+            margin-bottom:15px;
+        }
+        body {
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+			
+        }
+    
+        .menu {   
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+		
+		main form {
+		position:center;
+		
+		}
+		
+		footer div a{
+		 color: red;
+		}
+		
+		footer div{
+		height: 45px;
+		}
+		
+    </style>
+	<link rel="stylesheet" href="footer.css">
+</head>
+<body>
+	<header>
+	<center>
+        <div class="head1">TECHNOLOGYforALL</div>
+        <div class="head2">A science portal for everyone</div>
+    </header>
+	<div class="menu">
+        <a href="Page HTML.html">HOME</a>
+        <a href="news.html">NEWS</a>
+        <a href="#notification">NOTIFICATIONS</a>
+        <div class="menu-log">
+            <a href="#login">LOGIN</a>
+        </div>
+    </div>
+    </center>
+	
+	<main>
+		<form>
+		<center>
+		<h3>
+		<fieldset>
+		  <legend>Fill Your Information</legend> 
+		<p>
+			<label >Salutation: 
+			  <select name="salutation">
+				<option>--None--</option>
+				<option>Mr.</option>
+				<option>Ms.</option>
+				<option>Mrs.</option>
+				<option>Dr.</option>
+				<option>Prof.</option>
+			  </select>
+			</label>
+		</p> 
+		<p>
+			<label>First name: <input name="firstName" /></label>
+		 </p>
+		<p>
+			<label>Last name: <input name="lastName" /></label>
+		</p>
+		<p>Gender: <label><input type="radio" name="gender" value="male" /> Male</label>
+			<label><input type="radio" name="gender" value="female" /> Female</label>
+		</p>
+		<p>
+			<label>Email:<input type="email" name="email" /></label>
+		</p>
+		<p>
+			<label>Age:<input type="number" name="age" /></label>
+		</p>
+		<p>
+			<label>Date of Birth:<input type="date" name="birthDate"></label>
+		</p>
+		<p>
+			<label>
+			  Address :
+			  <br />
+			  <textarea name="address" cols="30" rows="3"></textarea>
+			</label>
+		</p>
+		<p>
+			<button type="submit">Submit</button>
+		</p>
+		</fieldset>
+		</h3>
+		<center>
+	    </form>
+	</main>
+	<footer style="position:relative">
+		<center>
+			<div>Contact me at <a href="mailto:#">#</a></div>
+	    </center>
+		<div class="footer-copyright">
+		   © Copyright TECHNOLOGYforALL
+		 </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.icon-btn {
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #E9F0F7;
+}
+/* Task Section Styling */
+.task-section {
+	margin:25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.task-card {
+    background-color: #F0F4FA;
+    width: 45%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+}
+
+.task-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
